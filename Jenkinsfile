@@ -2,10 +2,10 @@ pipeline {
   agent any
   options { timestamps() }
 
-   environment {
+  environment {
     IMAGE = 'iradadev2026/monapp30'
     TAG   = "build-${env.BUILD_NUMBER}"
-    PATH  = "C:\\Program Files\\Docker\\Docker\\resources\\bin;${env.PATH}"
+    PATH  = "C:\\Users\\irada\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin;${env.PATH}"
   }
 
   stages {
